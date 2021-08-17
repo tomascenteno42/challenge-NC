@@ -14,6 +14,7 @@
 La pagina debe poder comunicarse con la API de este repositorio. La misma consta de 2 endpoints
 * GET http://localhost:8081/api/members - para obtener los miembros
 * POST http://localhost:8081/api/members - para añadir un nuevo miembro
+* Para poder utilizarlos, el Authorization header debe formatearse como Bearer [token].
 
 ## AUTH
 Para poder utilizar los 2 endpoint anteriores debe obtener un token y enviarlo en los llamados.
@@ -21,7 +22,6 @@ Para poder utilizar los 2 endpoint anteriores debe obtener un token y enviarlo e
 body:
   "username": "sarah"
   "password": "connor"
-El valor del Header Authorization debe formatearse como Bearer [token].
 
 ### Start API server
 * Clonar este repositorio
